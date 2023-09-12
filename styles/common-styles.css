@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Inter:wght@300;500&family=Philosopher&display=swap');
+
+:root {
+	--dark-blue: rgba(36, 81, 159, 1);
+	--light-green: rgb(240, 255, 255);
+	--gray: rgb(226, 228, 223);
+	--yellowish: rgb(255, 191, 0);
+	--gray-font: rgb(169, 169, 169);
+	--green-bg: rgb(80, 200, 120);
+	--light-blue: rgb(99, 197, 218);
+	--brownish-bg: rgb(234, 221, 202);
+	--blueish-bg: rgb(0, 150, 255);
+	--orangeish-bg: rgb(255, 229, 180);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	/* box-sizing: border-box; */
+}
+
+body {
+	font-family: Inter;
+	font-weight: 300;
+	/* font-size: 1em !important; */
+	/* overflow-y: visible; */
+	/* height: 100vh;
+	min-height: 500px;
+	max-height: 1000px; */
+}
+
+.cont {
+	/* width: 100vw; */
+	height: 100vh;
+	display: grid;
+	grid-template-rows: minmax(15%, 130px) 85%;
+	/* font-size: 1vw !important; */
+	/* font-size: 1vw !important; */
+	/* font-size: 1rem; */
+	min-width: 320px;
+	/* min-height: 600px; */
+	overflow: visible;
+	/* max-width: 900px;
+	max-height: 600px; */
+	margin: auto;
+	/* justify-content: flex-start;
+	align-items: stretch; */
+	font-size: 0.8em;
+}
+
+object {
+	width: 100%;
+	height: 100%;
+}
+
+.header-obj {
+	font-size: 0.7em;
+}
+
+.nav-obj {
+	border-right: 1px solid var(--gray);
+}
+
+.main-area {
+	display: grid;
+	grid-template-columns: 10% 90%;
+}
+
+input {
+	border: 1px solid gray;
+	border-radius: 15px;
+	padding: 0.5em;
+}
+
+.brownish-bg {
+	background-color: var(--brownish-bg)
+}
+
+.blueish-bg {
+	background-color: var(--blueish-bg)
+}
+
+.orangeish-bg {
+	background-color: var(--orangeish-bg)
+}
+
+.active-nav {
+	background-color: var(--light-blue);
+}
+
+.white-font {
+	color: white;
+}
+
+.gray-font {
+	color: var(--gray-font);
+}
+
+.rotate-45 {
+	transform: rotate(45deg);
+}
+
+.blue-bg {
+	background-color: var(--dark-blue);
+}
+
+.bold {
+	font-weight: 500;
+}
+
+.flex {
+	display: flex
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-start {
+	justify-content: flex-start;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-around {
+	justify-content: space-around;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.align-start {
+	align-items: flex-start;
+}
+
+.align-stretch {
+	align-items: stretch;
+}
+
+.green-bg {
+	background-color: var(--green-bg);
+}
+
+.yellowish-bg {
+	background-color: var(--yellowish);
+}
+
+.black-bg {
+	background-color: black;
+}
+
+.pie-light-gray {
+	background-color: rgba(220, 220, 220, 1);
+}
+
+.pie-dark-gray {
+	background-color: rgba(169, 169, 169, 1);
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}
+
+.mt-0 {
+	margin-top: 0;
+}
+
+.mt-auto {
+	margin-top: auto;
+}
+
+.mb-half {
+	margin-bottom: 0.5em;
+}
+
+.vertical-center {
+	vertical-align: super;
+}
+
+.align-self-start {
+	align-self: start;
+}
+
+.shift-end {
+	margin-left: auto;
+}
+
+button {
+	background-color: inherit;
+	font-size: inherit;
+}
+
+@media screen and (min-width: 1700px) {
+	/* body {
+	} */
+
+	.cont {
+		/* font-size: 2em; */
+		/* width: 100vw; */
+		/* height: 100vh; */
+		/* max-width: unset;
+		max-height: unset; */
+	}
+}
+
+@media screen and (min-height: 840px) {
+	.cont {
+		/* font-size: */
+	}
+
+	.cont {
+		/* font-size: 2em;
+		width: 100vw; */
+		/* height: 100vh; */
+		/* max-width: unset;
+		max-height: unset; */
+		grid-template-rows: 130px auto;
+	}
+
+	/* #contacts {
+		grid-template-rows: 130px auto !important;
+	} */
+}
+
+@media screen and (max-width: 900px) {
+	.cont {
+		font-size: 0.6em;
+	}
+
+	/* .main-area {
+		grid-template-columns: 15% 85%;
+	} */
+}
+
+@media screen and (max-width: 660px) {
+	/* .cont {
+		font-size: 0.4em;
+	} */
+
+	.main-area {
+		grid-template-columns: 15% 85%;
+	}
+}
+
+/* @media screen and (max-width: 580px) {
+	.main-area {
+		grid-template-columns: 20% 80%;
+	}
+} */
+
+@media screen and (max-width: 520px) {
+	.cont {
+		font-size: 0.4em;
+	}
+
+	input {
+		font-size: 0.6em;
+	}
+}
+
+/* @media screen and (min-width: 1440px) {
+	.cont {
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.cont {
+		font-size: 1.5em;
+	}
+} */
